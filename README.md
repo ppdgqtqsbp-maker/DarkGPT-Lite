@@ -9,12 +9,41 @@
 </p>
 
 <p align="center">
+  <a href="#quick-start">Quick Start</a> •
   <a href="#features">Features</a> •
   <a href="#installation">Installation</a> •
   <a href="#usage">Usage</a> •
   <a href="#updates">Updates</a> •
   <a href="#disclaimer">Disclaimer</a>
 </p>
+
+## Quick Start
+
+Get DarkGPT Lite running in 3 simple steps:
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/InfoSecREDD/DarkGPT-Lite.git
+cd DarkGPT-Lite
+
+# 2. Run the script (it will auto-setup everything)
+python3 darkgpt.py
+
+# Or use the convenience script:
+./run.sh        # Linux/macOS
+run.bat         # Windows
+
+# 3. Enter your OpenAI API key when prompted
+```
+
+That's it! The script automatically:
+- ✅ Creates a virtual environment
+- ✅ Installs all dependencies
+- ✅ Saves your configuration
+
+**Need more help?** See [SETUP.md](SETUP.md) for detailed setup instructions and troubleshooting.
+
+**Don't have an OpenAI API key?** Get one at https://platform.openai.com/api-keys
 
 ## Features
 
@@ -35,25 +64,42 @@ DarkGPT Lite is a specialized CLI tool providing unrestricted conversations with
 
 - Python 3.9+ installed
 - Internet connection
-- OpenAI API key
+- OpenAI API key ([Get one here](https://platform.openai.com/api-keys))
 
-### Setup
+### Quick Setup
 
-1. Clone this repository or download the script:
-   ```bash
-   git clone https://github.com/InfoSecREDD/DarkGPT-Lite.git
-   cd DarkGPT-Lite
-   ```
+**Option 1: Using convenience scripts**
 
-2. Run the script:
-   ```bash
-   python darkgpt.py
-   ```
+```bash
+# Linux/macOS
+./run.sh
 
-3. DarkGPT Lite will:
-   - Automatically create a virtual environment
-   - Install all required dependencies
-   - Prompt you for your OpenAI API key on first run
+# Windows
+run.bat
+```
+
+**Option 2: Direct Python execution**
+
+```bash
+# Clone this repository
+git clone https://github.com/InfoSecREDD/DarkGPT-Lite.git
+cd DarkGPT-Lite
+
+# Run the script
+python3 darkgpt.py
+```
+
+DarkGPT Lite will:
+- Automatically create a virtual environment in `.darkgpt_venv/`
+- Install all required dependencies
+- Prompt you for your OpenAI API key on first run
+- Save your configuration in `.darkgpt_config.json`
+
+**Need help?** Check [SETUP.md](SETUP.md) for:
+- Detailed installation instructions
+- Platform-specific guides
+- Troubleshooting tips
+- Security best practices
 
 ## Usage
 

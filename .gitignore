@@ -174,3 +174,8 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# DarkGPT Lite configuration (contains API key)
+.darkgpt_config.json
+darkgpt_backup_*.py
+projects/
